@@ -25,7 +25,9 @@ https://github.com/esp8266/arduino-esp8266fs-plugin
 Clone the above repository. Create a folder at sketchbook location of IDE and name it tools. You can find the path at Preferences submenu is inside File Menu. As shown below
 ![LocationSketch](images/sketchbookLocation.png)
 Restart the Arduino IDE. Connect your NodeMCU with computer and select the COM port on Arduino IDE. Click on "ESP8266 Sketch Data Upload" inside the Tools Menu in Arduino IDE. As shown below.
+
 ![Upload](images/Upload.png)
+
 It will start uploading certificates to NodeMCU. This may take upto 2 Minutes.  
 
 ## NodeMCU AWS Subsciption Code
@@ -41,4 +43,3 @@ The file filed containing the code is named as "NodeMCU_subs_shadow.ino.ino". Yo
 - #define led1 14 Update to the GPIO pin you want to use for Red LED
 - #define led2 12 Update to the GPIO pin you want to use for Blue LED
 - #define led3 13 Update to the GPIO pin you want to use for Green LED
-
