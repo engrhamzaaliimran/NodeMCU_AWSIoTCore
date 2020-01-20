@@ -19,7 +19,11 @@ Window users can use Ubuntu App from Microsoft Store for this. OpenSSL can be in
 apt install openssl
 ```
 ## ESP8266 FileSystem Uploader
-To flash DER files, we need a to install plug-in named "ESP8266 FileSystem Uploader" to Arduino IDE.Following is the link to repository
+To flash DER files, we need a to install plug-in named "ESP8266 FileSystem Uploader" to Arduino IDE. Following is the link to repository
 https://github.com/esp8266/arduino-esp8266fs-plugin
-Clone the above repository. Create a folder name it tools at sketchbook location of IDE. You can find the path at Preferences submenu is inside File Menu. As shown below
+
+Clone the above repository. Create a folder at sketchbook location of IDE and name it tools. You can find the path at Preferences submenu is inside File Menu. As shown below
 ![LocationSketch](images/sketchbookLocation.png)
+Restart the Arduino IDE. Connect your NodeMCU with computer and select the COM port on Arduino IDE. Click on "ESP8266 Sketch Data Upload" inside the Tools Menu in Arduino IDE. As shown below.
+![Upload](images/Upload.png)
+It will start uploading certificates to NodeMCU. This may take upto 2 Minutes.  
