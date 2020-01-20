@@ -1,5 +1,5 @@
 # NodeMCU AWS Subscription
-In order to create a connection with AWS. We first need to flash certificates provided by AWS into NodeMCU's Flash memory.
+In order to create a connection with AWS. You first need to flash certificates provided by AWS into NodeMCU's Flash memory.
 ## Installation of Drivers 
 You need to install drivers for FTDI chip cp2101 present on NodeMCU. You can get them to from the following link
 https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers 
@@ -10,7 +10,7 @@ Three certificate files are used to establish a connection with AWS Cloud. Follo
   - xxx-certificate.pem 
   - xxx-private.pem.key
 ### Conversion to DER Format 
-To flash to NodeMCU, we need to convert the certificate files to DER format. The OpenSSL utility is used for this purpose. Next is the syntax for running conversion commands.
+To flash to NodeMCU, you need to convert the certificate files to DER format. The OpenSSL utility is used for this purpose. Next is the syntax for running conversion commands.
 ```sh
 $ openssl  x590 -in InputFileName.pem –out OutputFileName.der -outform DER
 ```
@@ -19,7 +19,7 @@ Windows users can use the Ubuntu App from Microsoft Store for this. OpenSSL can 
 apt install openssl
 ```
 ## ESP8266 FileSystem Uploader
-To flash DER files, we need a to install plug-in named "ESP8266 FileSystem Uploader" to Arduino IDE. Following is the link to the repository
+To flash DER files, you need a to install plug-in named "ESP8266 FileSystem Uploader" to Arduino IDE. Following is the link to the repository
 
 https://github.com/esp8266/arduino-esp8266fs-plugin
 
@@ -32,7 +32,7 @@ Restart the Arduino IDE. Connect your NodeMCU with the computer and select the C
 
 It will start uploading certificates to NodeMCU. This may take up to 2 Minutes.  
 ## NodeMCU AWS Subsciption Code
-The file containing the code is named as "NodeMCU_subs_shadow.ino.ino". You need to make a few changes in it according to your setup. Following are the changes needed
+The file containing the code is named as "NodeMCU_subs_shadow.ino". You need to make a few changes in it according to your setup. Following are the changes needed
 
 - const char* AWS_endpoint = "XXXXXXX.amazonaws.com"; Update it to your own address here
 - client.subscribe("$aws/things/RPI3/shadow/update"); Update it to your own custom topic
