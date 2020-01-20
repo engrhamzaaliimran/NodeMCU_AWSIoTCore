@@ -25,6 +25,7 @@ https://github.com/esp8266/arduino-esp8266fs-plugin
 
 Clone the above repository. Create a folder at the sketchbook location of IDE and name it "tools". You can find the path at Preferences submenu is inside File Menu. As shown below
 ![LocationSketch](images/sketchbookLocation.png)
+
 Restart the Arduino IDE. Connect your NodeMCU with the computer and select the COM port on Arduino IDE. Click on "ESP8266 Sketch Data Upload" inside the Tools Menu in Arduino IDE. As shown below.
 
 ![Upload](images/Upload.png)
