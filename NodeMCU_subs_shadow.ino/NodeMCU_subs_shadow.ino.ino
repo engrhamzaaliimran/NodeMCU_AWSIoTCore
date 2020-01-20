@@ -3,6 +3,8 @@
  * and Will turn on the corresponding LED depending upon the the value of key "color"
  * The value of this key can be "Red", "Green", "Blue" or "NoColor"
  */
+#define MQTT_MAX_PACKET_SIZE 512
+
 #include "FS.h"
 #include  <ESP8266WiFi.h>
 #include  <PubSubClient.h>         
