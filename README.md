@@ -1,7 +1,7 @@
 # NodeMCU AWS Subscription
 In order to create a connection with AWS. We first need to flash certificates provided by AWS into NodeMCU's Flash memory.
 ## Installation of Drivers 
-You need to install drivers for FTDI chip cp2101 present on NodeMCU. You can get them to form the following link
+You need to install drivers for FTDI chip cp2101 present on NodeMCU. You can get them to from the following link
 https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers 
 
 ## Flashing the Certificates
@@ -23,7 +23,7 @@ To flash DER files, we need a to install plug-in named "ESP8266 FileSystem Uploa
 
 https://github.com/esp8266/arduino-esp8266fs-plugin
 
-Clone the above repository. Create a folder at the sketchbook location of IDE and name it "tools". You can find the path at Preferences submenu is inside File Menu. As shown below
+Clone the above repository. Create a folder at the sketchbook location of IDE and name it "tools". Copy the contents of repository in it. You can find the path at Preferences submenu is inside File Menu. As shown below
 ![LocationSketch](images/sketchbookLocation.png)
 
 Restart the Arduino IDE. Connect your NodeMCU with the computer and select the COM port on Arduino IDE. Click on "ESP8266 Sketch Data Upload" inside the Tools Menu in Arduino IDE. As shown below.
@@ -32,7 +32,7 @@ Restart the Arduino IDE. Connect your NodeMCU with the computer and select the C
 
 It will start uploading certificates to NodeMCU. This may take up to 2 Minutes.  
 ## NodeMCU AWS Subsciption Code
-The file filed containing the code is named as "NodeMCU_subs_shadow.ino.ino". You need to make a few changes in it according to your setup. Following are the changes needed
+The file containing the code is named as "NodeMCU_subs_shadow.ino.ino". You need to make a few changes in it according to your setup. Following are the changes needed
 
 - const char* AWS_endpoint = "XXXXXXX.amazonaws.com"; Update it to your own address here
 - client.subscribe("$aws/things/RPI3/shadow/update"); Update it to your own custom topic
