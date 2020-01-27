@@ -120,7 +120,7 @@ void reconnect() {
       // Once connected, publish an announcement...
       client.publish("d2s", "hello world from nodemcu");
       // ... and resubscribe
-      client.subscribe("$aws/things/RPI3/shadow/update");
+      client.subscribe("$aws/things/MyThing/shadow/update");
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
