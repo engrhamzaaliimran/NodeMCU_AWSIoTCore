@@ -35,7 +35,7 @@ It will start uploading certificates to NodeMCU. This may take up to 2 Minutes.
 The file containing the code is named as "NodeMCU_subs_shadow.ino". You need to make a few changes in it according to your setup. Following are the changes needed
 
 - const char* AWS_endpoint = "XXXXXXX.amazonaws.com"; Update it to your own address here
-- client.subscribe("$aws/things/RPI3/shadow/update"); Update it to your own custom topic
+- client.subscribe("$aws/things/MyThing/shadow/update"); Update it to your own custom topic
 - File cert = SPIFFS.open("/cert.der", "r"); Update cert.crt with your file name
 - File private_key = SPIFFS.open("/private.der", "r"); Update with your file name
 - File ca = SPIFFS.open("/ca.der", "r"); Update with your file name
