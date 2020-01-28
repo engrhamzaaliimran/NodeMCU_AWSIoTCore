@@ -44,3 +44,14 @@ The file containing the code is named as "NodeMCU_subs_shadow.ino". You need to 
 - #define led1 14 Update to the GPIO pin you want to use for Red LED
 - #define led2 12 Update to the GPIO pin you want to use for Blue LED
 - #define led3 13 Update to the GPIO pin you want to use for Green LED
+
+## Hardware Required
+If you want to follow the example code. Given in this repository then you need to buy following components
+
+- NodeMCU ESP8266
+- 3x 1K Ohm Resistors
+- 3x LED (Can be of different colors)
+
+## Circuit Diagram 
+Following is the circuit diagram for the example code given
+![Upload](images/nodemcu_circuit_bb.png)
